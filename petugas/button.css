@@ -1,0 +1,91 @@
+.ani {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #ddd;
+    background: #1C2833;
+    font-size: 16px;
+    margin: 20px;
+    letter-spacing: 0.7em;
+    border-radius: 2px
+}
+
+.ani p {
+    position: absolute;
+    display: block;
+    background: #FF5722
+}
+
+.ani p:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s
+}
+
+.ani:hover p:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.25s
+}
+
+.ani p:nth-child(2) {
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.25s
+}
+
+.ani:hover p:nth-child(2) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+    transition-delay: 0.25s
+}
+
+.ani p:nth-child(3) {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s
+}
+
+.ani:hover p:nth-child(3) {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.25s;
+    transition-delay: 0.35s
+}
+
+.ani p:nth-child(4) {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom
+}
+
+.ani:hover p:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.25s;
+    transition-delay: 0.45s
+}
+
+.ani:hover {
+    transition: 0.5s;
+    transition-delay: 1s;
+    background: #FF5722
+}
